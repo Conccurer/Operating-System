@@ -9,9 +9,11 @@ The current Project Version only contains the following file:
 
 Add The following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
 
-"### Starting My OS ###
+```
+### Starting My OS ###
 menuentry 'lassanOS'{
         multiboot /boot/mykernel.bin*
         boot
 }
-### End MY OS ###"
+### End MY OS ###
+```
