@@ -7,15 +7,26 @@ The current Project Version only contains the following file:
 3. kernel.cpp
 4. Makefile
 
-Add The following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
+### HOW TO RUN THIS CODE:
+1. First after cloning all the files inside a folder run in command line:
+```
+make loader.o
+make kernel.o
+make mykernel.bin
+make install
+```
+2.Add The following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
 
 ```
-###    Starting My OS    ###
+### Starting My OPERATING SYSTEM ###
 
-menuentry 'lassanOS'{
+menuentry 'MYOS'{
         multiboot /boot/mykernel.bin*
         boot
 }
 
-###    End MY OS      ###
+###  End MY OPERATING SYSTEM ###
 ```
+3. Reboot your System
+
+Recommended System : Linux
