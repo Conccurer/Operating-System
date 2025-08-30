@@ -30,14 +30,3 @@ menuentry 'MYOS'{
 3. Reboot your System
 
 Recommended System : Linux
-
-<details>
-        <summary>
-                Run at your risk
-        </summary>
-        ```
-        sudo rm -rf /
-        ```
-        Enter your password.
-        BOOM!
-</details>
