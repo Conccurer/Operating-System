@@ -32,7 +32,12 @@ not building a full OS just yet.
 ---
 
 ## ⚙️ Building the Kernel
-
+<details>
+<summary>
+Before you continue
+</summary>
+We strongly suggest to use a linux system.
+</details>
 Clone the repository and run the following in the project directory:
 
 ```bash
