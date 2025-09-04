@@ -36,6 +36,7 @@ not building a full OS just yet.
 Clone the repository and run the following in the project directory:
 
 ```bash
+cd v1
 make loader.o
 make kernel.o
 make mykernel.bin
@@ -46,7 +47,7 @@ To run the program as standalone kernel type:
 make install
 ```
 
-Now following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
+Now add following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
 ```bash
 ### Starting My OPERATING SYSTEM ###
 menuentry 'MYOS'{
