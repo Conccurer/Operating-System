@@ -39,4 +39,21 @@ Clone the repository and run the following in the project directory:
 make loader.o
 make kernel.o
 make mykernel.bin
+```
+To run the program as standalone kernel type:
+
+```bash
 make install
+```
+
+Now following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
+```bash
+### Starting My OPERATING SYSTEM ###
+menuentry 'MYOS'{
+        multiboot /boot/mykernel.bin*
+        boot
+}
+###  End MY OPERATING SYSTEM ###
+```
+
+Reboot your system and you'll see your os listed down.
