@@ -15,7 +15,7 @@ extern "C" void callConstructors()
 }
 
 
-extern "C" void kernelMain(const void* multiboot_structure, unsigned int /*multiboot_magic*/)
+extern "C" void kernelMain(const void* multiboot_structure, unsigned int /*multibootSQ*/)
 {
     printf("Congrats, you've built your very first kernel");
     while(1);
