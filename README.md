@@ -41,8 +41,11 @@ make loader.o
 make kernel.o
 make mykernel.bin
 ```
-To run the program as standalone kernel type:
 
+<details>
+        <summary>
+                To run the program as standalone kernel type:
+        </summary>
 ```bash
 make install
 ```
@@ -58,3 +61,7 @@ menuentry 'MYOS'{
 ```
 
 Reboot your system and you'll see your os listed down.
+
+</details>
+
+
