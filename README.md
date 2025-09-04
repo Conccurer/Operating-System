@@ -49,31 +49,6 @@ make mykernel.bin
 
 type:
         
-        ```bash
-        make install
-        ```
-
-Now add following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
-```bash
-### Starting My OPERATING SYSTEM ###
-menuentry 'MYOS'{
-        multiboot /boot/mykernel.bin*
-        boot
-}
-###  End MY OPERATING SYSTEM ###
-```
-
-Reboot your system and you'll see your os listed down.
-
-</details>
-
-<details>
-        <summary>
-                To run the program as standalone kernel 
-        </summary>
-
-type:
-        
 ```bash
         make install
 ```
