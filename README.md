@@ -11,7 +11,7 @@ and runs a minimal C++ kernel after being loaded by GRUB.
 
 ## Features (v1)
 - A **multiboot-compliant kernel** that GRUB can load.
-- Written in **C++**, **x86-64 Assembly**, and linked with a **custom linker script**.
+- Written in **C++**, **x86 Assembly**, and linked with a **custom linker script**.
 - A very **minimal but functional build system** using `Makefile`.
 - Outputs text to the screen once the kernel is running.
 
