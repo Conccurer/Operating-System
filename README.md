@@ -1,32 +1,42 @@
-# Operating-System
-Building the basic Operating Operating Kernel
-Currently in Used Languages: CPP, Makefile, x86-64 Assembly.
-The current Project Version only contains the following file:
-1. Loader.s
-2. Linker.ld
-3. kernel.cpp
-4. Makefile
+# 🖥️ Operating System (Kernel Project)
 
-### HOW TO RUN THIS CODE:
-1. First after cloning all the files inside a folder run in command line:
-```
+This repository is a **from-scratch operating system kernel project** created for learning purposes.  
+It demonstrates the fundamentals of how an operating system boots, switches to protected mode,  
+and runs a minimal C++ kernel after being loaded by GRUB.
+
+> Think of this as a "Hello World" for OS development — small, simple, but powerful in showing  
+> how high-level C++ code can run directly on bare metal hardware without an underlying OS.
+
+---
+
+## ✨ Features (Current Version)
+- A **multiboot-compliant kernel** that GRUB can load.
+- Written in **C++**, **x86-64 Assembly**, and linked with a **custom linker script**.
+- A very **minimal but functional build system** using `Makefile`.
+- Outputs text to the screen once the kernel is running.
+
+**v1** is intentionally simple — the focus is on understanding the **bootstrapping process**,  
+not building a full OS just yet.
+
+---
+
+## Structure
+
+| File         | Purpose                                                                 |
+|--------------|-------------------------------------------------------------------------|
+| `Loader.s`   | Assembly bootstrap that sets up the environment for the kernel.         |
+| `Linker.ld`  | Linker script that defines memory layout for the kernel binary.         |
+| `kernel.cpp` | Entry point of the kernel, written in C++.                              |
+| `Makefile`   | Build instructions for compiling and linking everything together.       |
+
+---
+
+## ⚙️ Building the Kernel
+
+Clone the repository and run the following in the project directory:
+
+```bash
 make loader.o
 make kernel.o
 make mykernel.bin
 make install
-```
-2.Add The following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
-
-```
-### Starting My OPERATING SYSTEM ###
-
-menuentry 'MYOS'{
-        multiboot /boot/mykernel.bin*
-        boot
-}
-
-###  End MY OPERATING SYSTEM ###
-```
-3. Reboot your System
-
-Recommended System : Linux
