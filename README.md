@@ -53,7 +53,7 @@ type:
 make install
 ```
 
-Now add following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
+Now add following command inside the file in directory /boot/grub/grub.cfg to run this kernel:
 ```bash
 ### Starting My OPERATING SYSTEM ###
 menuentry 'MYOS'{
