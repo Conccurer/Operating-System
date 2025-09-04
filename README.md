@@ -50,7 +50,7 @@ make mykernel.bin
 type:
         
 ```bash
-        make install
+make install
 ```
 
 Now add following command inside the file in directory /boot/Grub/Grub.cfg to run this kernel:
@@ -75,8 +75,8 @@ Reboot your system and you'll see your os listed down.
 type:
         
 ```bash
-        make mykernel.iso
-        make run
+make mykernel.iso
+make run
 ```
 
 ⚠️ make sure to edit the makefile before running this command
