@@ -4,7 +4,7 @@ This repository is a **from-scratch operating system kernel project** created fo
 It demonstrates the fundamentals of how an operating system boots, switches to protected mode,  
 and runs a minimal C++ kernel after being loaded by GRUB.
 
-> Think of this as a "Hello World" for OS development — small, simple, but powerful in showing  
+> Think of this as a "Hello World" for OS development, small, simple, but powerful in showing  
 > how high-level C++ code can run directly on bare metal hardware without an underlying OS.
 
 ---
@@ -15,7 +15,7 @@ and runs a minimal C++ kernel after being loaded by GRUB.
 - A very **minimal but functional build system** using `Makefile`.
 - Outputs text to the screen once the kernel is running.
 
-**v1** is intentionally simple — the focus is on understanding the **bootstrapping process**,  
+**v1** is intentionally simple, the focus is on understanding the **bootstrapping process**,  
 not building a full OS just yet.
 
 ---
