@@ -1,4 +1,4 @@
-# 🖥️ Operating System (Kernel Project)
+# 🖥️ BASIC C++ KERNEL
 
 This repository is a **from-scratch operating system kernel project** created for learning purposes.  
 It demonstrates the fundamentals of how an operating system boots, switches to protected mode,  
